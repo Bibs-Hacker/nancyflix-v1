@@ -31,7 +31,7 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [selected, setSelected] = useState<Movie | null>(null)
-  const [trailers, setTrailers] = useState<{key:string;site:string;name:string}[]>([])
+  const [trailers, setTrailers] = useState<{ key: string; site: string; name: string; type?: string }[]>([])
   const [trailerLoading, setTrailerLoading] = useState(false)
   const [user, setUser] = useState<User | null>(null)
   const [watchlist, setWatchlist] = useState<Movie[]>([])
